@@ -2095,12 +2095,12 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"page1",
+                        "caption":"ATTACH",
                         "image":""
                     },
                     {
                         "id":"b",
-                        "caption":"page2",
+                        "caption":"EXECUTOR",
                         "image":""
                     },
                     {
@@ -2147,13 +2147,35 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.ctl_layout14.append(
-                xui.create("xui.UI.Image")
-                .setHost(host,"ctl_image103")
-                .setLeft("5em")
-                .setTop("5.833333333333333em")
-                .setWidth("11.666666666666666em")
-                .setHeight("3.3333333333333335em")
-                .setSrc("http://www.crossui.com/img/logo.png"),
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button5")
+                .setLeft("0.38095238095238093em")
+                .setTop("10.209523809523809em")
+                .setWidth("4.114285714285714em")
+                .setHeight("2.057142857142857em")
+                .setCaption("Button"),
+                "before"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label8")
+                .setLeft("0em")
+                .setTop("1.8285714285714285em")
+                .setWidth("5.40952380952381em")
+                .setHeight("2.4380952380952383em")
+                .setCaption("Inject before use"),
+                "before"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label9")
+                .setLeft("1.0666666666666667em")
+                .setTop("1.0666666666666667em")
+                .setWidth("21.409523809523808em")
+                .setHeight("13.104761904761904em")
+                .setCaption("Type here"),
                 "main"
             );
             
@@ -2165,7 +2187,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("20px")
                 .setWidth("334px")
                 .setHeight("47px")
-                .setCaption("UI Interaction Test")
+                .setCaption("(SILLY MOD)           PRO MOD MENU")
                 .setHAlign("center")
                 .setCustomStyle({
                     "KEY":{
