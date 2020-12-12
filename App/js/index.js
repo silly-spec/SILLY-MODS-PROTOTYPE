@@ -2105,7 +2105,7 @@ xui.Class('App', 'xui.Module',{
                     },
                     {
                         "id":"c",
-                        "caption":"page3",
+                        "caption":"cmds",
                         "image":""
                     }
                 ])
@@ -2166,17 +2166,6 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("2.4380952380952383em")
                 .setCaption("Inject before use"),
                 "before"
-            );
-            
-            host.ctl_layout14.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label9")
-                .setLeft("6.4em")
-                .setTop("1.0666666666666667em")
-                .setWidth("16.83809523809524em")
-                .setHeight("13.104761904761904em")
-                .setCaption("Type here"),
-                "main"
             );
             
             host.ctl_layout14.append(
@@ -2245,6 +2234,18 @@ xui.Class('App', 'xui.Module',{
                 "after"
             );
             
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input1")
+                .setLeft("0.3047619047619048em")
+                .setTop("3.3523809523809525em")
+                .setWidth("22.552380952380954em")
+                .setHeight("8.457142857142857em")
+                .setLabelSize("8em")
+                .setMultiLines(true),
+                "main"
+            );
+            
             host.ctl_pane39.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"ctl_slabel8")
@@ -2265,217 +2266,6 @@ xui.Class('App', 'xui.Module',{
                         "opacity":0.8
                     }
                 })
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton163")
-                .setDesc("Insert Items to Tabs")
-                .setLeft("31.666666666666668em")
-                .setTop("23.666666666666668em")
-                .setWidth("8.5em")
-                .setHeight("3em")
-                .setCaption("Insert Items to Tabs")
-                .onClick([
-                    {
-                        "desc":"first",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"first",
-                                    "caption":"first"
-                                }
-                            ],
-                            "",
-                            true
-                        ],
-                        "method":"insertItems"
-                    },
-                    {
-                        "desc":"last",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"last",
-                                    "caption":"last"
-                                }
-                            ],
-                            "",
-                            false
-                        ],
-                        "method":"insertItems"
-                    },
-                    {
-                        "desc":"before 1",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"b0",
-                                    "caption":"b-page2"
-                                }
-                            ],
-                            "b",
-                            true
-                        ],
-                        "method":"insertItems"
-                    },
-                    {
-                        "desc":"before 2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"b2",
-                                    "caption":"b-last"
-                                }
-                            ],
-                            "last",
-                            true
-                        ],
-                        "method":"insertItems"
-                    },
-                    {
-                        "desc":"after 1",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"a1",
-                                    "caption":"a-page2"
-                                }
-                            ],
-                            "b",
-                            false
-                        ],
-                        "method":"insertItems"
-                    },
-                    {
-                        "desc":"after 2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            [
-                                {
-                                    "id":"a2",
-                                    "caption":"a-last"
-                                }
-                            ],
-                            "last",
-                            false
-                        ],
-                        "method":"insertItems"
-                    }
-                ])
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton213")
-                .setDesc("Update Item in Tabsd")
-                .setLeft("40.833333333333336em")
-                .setTop("23.666666666666668em")
-                .setWidth("8.5em")
-                .setHeight("3em")
-                .setCaption("Update Item in Tabs")
-                .onClick([
-                    {
-                        "desc":"a",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            "a",
-                            {
-                                "caption":"[page1]",
-                                "image":"{/}img/box.png"
-                            }
-                        ],
-                        "method":"updateItem"
-                    },
-                    {
-                        "desc":"b",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            "last",
-                            {
-                                "caption":"[last one]"
-                            }
-                        ],
-                        "method":"updateItem"
-                    }
-                ])
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton1179")
-                .setDesc("Remove Items  in Tabs")
-                .setLeft("50em")
-                .setTop("23.666666666666668em")
-                .setWidth("8.5em")
-                .setHeight("3em")
-                .setCaption("Remove Items  in Tabs")
-                .onClick([
-                    {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            "c"
-                        ],
-                        "method":"removeItems"
-                    },
-                    {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
-                            "first"
-                        ],
-                        "method":"removeItems"
-                    }
-                ])
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton1473")
-                .setDesc("Remove Items  in Tabs")
-                .setLeft("59.166666666666664em")
-                .setTop("23.666666666666668em")
-                .setWidth("8.5em")
-                .setHeight("3em")
-                .setCaption("Select Tab")
-                .onClick([
-                    {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "method":"fireItemClickEvent",
-                        "args":[
-                            "c"
-                        ],
-                        "event":1
-                    },
-                    {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "method":"fireItemClickEvent",
-                        "timeout":1000,
-                        "args":[
-                            "a"
-                        ]
-                    }
-                ])
             );
             
             return children;
