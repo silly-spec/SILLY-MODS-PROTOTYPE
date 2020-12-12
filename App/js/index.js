@@ -2081,15 +2081,16 @@ xui.Class('App', 'xui.Module',{
                     "actions":[
                         {
                             "desc":"Action 1",
-                            "type":"other",
-                            "target":"url",
+                            "type":"control",
+                            "target":"ctl_pane39",
                             "args":[
-                                "derdur9164@student.ccs.k12.nc.us"
+                                "rotateAlertLoop1"
                             ],
-                            "method":"mailTo",
+                            "method":"animate",
                             "okFlag":"_DI_succeed",
                             "koFlag":"_DI_fail",
-                            "event":1
+                            "event":1,
+                            "onOK":1
                         }
                     ]
                 }),
