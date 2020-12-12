@@ -2152,9 +2152,22 @@ xui.Class('App', 'xui.Module',{
                 .setName("injector")
                 .setLeft("0.38095238095238093em")
                 .setTop("10.209523809523809em")
-                .setWidth("4.114285714285714em")
+                .setWidth("5.0285714285714285em")
                 .setHeight("2.057142857142857em")
                 .setCaption("INJECT")
+                .onChange([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"url",
+                        "args":[
+                            "derdur9164@student.ccs.k12.nc.us"
+                        ],
+                        "method":"mailTo",
+                        "okFlag":"_DI_succeed",
+                        "koFlag":"_DI_fail"
+                    }
+                ])
                 .onClick({
                     "newbies":{
                         "Nbexwphp":"xui.UI.ComboInput",
@@ -2174,8 +2187,7 @@ xui.Class('App', 'xui.Module',{
                             "koFlag":"_DI_fail",
                             "onOK":1,
                             "event":1
-                        },
-                        "_xui_ui_button5_onclick"
+                        }
                     ]
                 }),
                 "before"
@@ -2184,7 +2196,7 @@ xui.Class('App', 'xui.Module',{
             host.ctl_layout14.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label8")
-                .setLeft("0em")
+                .setLeft("0.5333333333333333em")
                 .setTop("1.8285714285714285em")
                 .setWidth("5.40952380952381em")
                 .setHeight("2.4380952380952383em")
