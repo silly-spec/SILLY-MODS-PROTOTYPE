@@ -8,6 +8,7 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.APICaller")
                 .setHost(host,"api_1")
+                .setName("api_1")
                 .setQueryURL("https://www.crossui.com/xui/backend/PHP/demo.php")
                 .setQueryArgs({
                     "a":1,
@@ -2204,19 +2205,6 @@ xui.Class('App', 'xui.Module',{
                         "opacity":0.8
                     }
                 })
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input28")
-                .setLeft("0em")
-                .setTop("0em")
-                .setWidth("69.63809523809523em")
-                .setHeight("84.64761904761905em")
-                .setLabelSize("8em")
-                .setLabelCaption("Password Input")
-                .setType("password")
-                .setValue("pwd")
             );
             
             return children;
