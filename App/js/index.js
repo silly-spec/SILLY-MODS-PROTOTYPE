@@ -2148,12 +2148,36 @@ xui.Class('App', 'xui.Module',{
             
             host.ctl_layout14.append(
                 xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button5")
+                .setHost(host,"INJECT")
+                .setName("injector")
                 .setLeft("0.38095238095238093em")
                 .setTop("10.209523809523809em")
                 .setWidth("4.114285714285714em")
                 .setHeight("2.057142857142857em")
-                .setCaption("Button"),
+                .setCaption("INJECT")
+                .onClick({
+                    "newbies":{
+                        "Nbexwphp":"xui.UI.ComboInput",
+                        "Nascq0p13":"xui.UI.ComboInput",
+                        "N6q7wmkuc":"xui.UI.ComboInput"
+                    },
+                    "actions":[
+                        {
+                            "desc":"Action 1",
+                            "type":"control",
+                            "target":"INJECT",
+                            "args":[
+                                "rotateAlertLoop1"
+                            ],
+                            "method":"animate",
+                            "okFlag":"_DI_succeed",
+                            "koFlag":"_DI_fail",
+                            "onOK":1,
+                            "event":1
+                        },
+                        "_xui_ui_button5_onclick"
+                    ]
+                }),
                 "before"
             );
             
@@ -2284,6 +2308,19 @@ xui.Class('App', 'xui.Module',{
                  "method":"message"
                 }
             ]
+        },
+            /**
+         * Fired when user click it
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+         * @param {} value  Object
+        */
+            _xui_ui_button5_onclick:function(profile, e, src, value){
+                var ns = this, uictrl = profile.boxing();
+            },
+        functions:{
         }
     }
 });
