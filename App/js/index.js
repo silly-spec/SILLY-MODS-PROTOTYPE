@@ -8,7 +8,6 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.APICaller")
                 .setHost(host,"api_1")
-                .setName("api_1")
                 .setQueryURL("https://www.crossui.com/xui/backend/PHP/demo.php")
                 .setQueryArgs({
                     "a":1,
@@ -276,89 +275,6 @@ xui.Class('App', 'xui.Module',{
                                 ]
                             }
                         ]
-                    }
-                ])
-            );
-            
-            host.ctl_pane39.append(
-                xui.create("xui.UI.Group")
-                .setHost(host,"ctl_group1")
-                .setLeft("1.6666666666666667em")
-                .setTop("6.704761904761905em")
-                .setWidth("28.333333333333332em")
-                .setHeight("4.75em")
-                .setOverflow("hidden")
-                .setCaption("URL")
-                .setToggleBtn(false)
-            );
-            
-            host.ctl_group1.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton6")
-                .setDesc("URL Test 1")
-                .setLeft("0.8333333333333334em")
-                .setTop("0em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("URL Test 1")
-                .onClick([
-                    {
-                        "desc":"self",
-                        "type":"other",
-                        "target":"url",
-                        "method":"open----_self",
-                        "args":[
-                            "https://crossui.com"
-                        ],
-                        "event":1
-                    }
-                ])
-            );
-            
-            host.ctl_group1.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton7")
-                .setDesc("URL Test 2")
-                .setLeft("10em")
-                .setTop("0em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("URL Test 2")
-                .onClick([
-                    {
-                        "desc":"blank",
-                        "type":"other",
-                        "target":"url",
-                        "method":"open----_blank",
-                        "args":[
-                            "https://crossui.com",
-                            {
-                                "key":null
-                            }
-                        ],
-                        "event":1
-                    }
-                ])
-            );
-            
-            host.ctl_group1.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton8")
-                .setDesc("URL Test 3")
-                .setLeft("19.166666666666668em")
-                .setTop("0em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("Email Test")
-                .onClick([
-                    {
-                        "desc":"email",
-                        "type":"other",
-                        "target":"url",
-                        "params":[
-                            "linb@crossui.com"
-                        ],
-                        "method":"mailTo"
                     }
                 ])
             );
@@ -2155,19 +2071,6 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("5.0285714285714285em")
                 .setHeight("2.057142857142857em")
                 .setCaption("INJECT")
-                .onChange([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"url",
-                        "args":[
-                            "derdur9164@student.ccs.k12.nc.us"
-                        ],
-                        "method":"mailTo",
-                        "okFlag":"_DI_succeed",
-                        "koFlag":"_DI_fail"
-                    }
-                ])
                 .onClick({
                     "newbies":{
                         "Nbexwphp":"xui.UI.ComboInput",
@@ -2177,15 +2080,14 @@ xui.Class('App', 'xui.Module',{
                     "actions":[
                         {
                             "desc":"Action 1",
-                            "type":"control",
-                            "target":"INJECT",
+                            "type":"other",
+                            "target":"url",
                             "args":[
-                                "rotateAlertLoop1"
+                                "derdur9164@student.ccs.k12.nc.us"
                             ],
-                            "method":"animate",
+                            "method":"mailTo",
                             "okFlag":"_DI_succeed",
                             "koFlag":"_DI_fail",
-                            "onOK":1,
                             "event":1
                         }
                     ]
@@ -2286,8 +2188,8 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"ctl_slabel8")
                 .setSpaceUnit("px")
-                .setLeft("10px")
-                .setTop("20px")
+                .setLeft("40px")
+                .setTop("40px")
                 .setWidth("334px")
                 .setHeight("47px")
                 .setCaption("(SILLY MOD)           PRO MOD MENU")
@@ -2302,6 +2204,19 @@ xui.Class('App', 'xui.Module',{
                         "opacity":0.8
                     }
                 })
+            );
+            
+            host.ctl_pane39.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input28")
+                .setLeft("0em")
+                .setTop("0em")
+                .setWidth("69.63809523809523em")
+                .setHeight("84.64761904761905em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password Input")
+                .setType("password")
+                .setValue("pwd")
             );
             
             return children;
