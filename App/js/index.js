@@ -2171,12 +2171,78 @@ xui.Class('App', 'xui.Module',{
             host.ctl_layout14.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label9")
-                .setLeft("1.0666666666666667em")
+                .setLeft("6.4em")
                 .setTop("1.0666666666666667em")
-                .setWidth("21.409523809523808em")
+                .setWidth("16.83809523809524em")
                 .setHeight("13.104761904761904em")
                 .setCaption("Type here"),
                 "main"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button2")
+                .setLeft("0.3047619047619048em")
+                .setTop("-0.0761904761904762em")
+                .setWidth("6.019047619047619em")
+                .setHeight("3.657142857142857em")
+                .setCaption("EXECUTE"),
+                "main"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button3")
+                .setLeft("0.3047619047619048em")
+                .setTop("12.114285714285714em")
+                .setWidth("5.714285714285714em")
+                .setHeight("2.8190476190476192em")
+                .setCaption("Clear"),
+                "main"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button4")
+                .setLeft("0.1523809523809524em")
+                .setTop("0em")
+                .setWidth("5.104761904761904em")
+                .setHeight("2.742857142857143em")
+                .setCaption("Button"),
+                "after"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button6")
+                .setLeft("0.1523809523809524em")
+                .setTop("3.7333333333333334em")
+                .setWidth("5.104761904761904em")
+                .setHeight("2.895238095238095em")
+                .setCaption("Button"),
+                "after"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button7")
+                .setLeft("0.1523809523809524em")
+                .setTop("7.542857142857143em")
+                .setWidth("5.104761904761904em")
+                .setHeight("2.895238095238095em")
+                .setCaption("Button"),
+                "after"
+            );
+            
+            host.ctl_layout14.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button8")
+                .setLeft("0.1523809523809524em")
+                .setTop("11.352380952380953em")
+                .setWidth("5.104761904761904em")
+                .setHeight("2.742857142857143em")
+                .setCaption("Button"),
+                "after"
             );
             
             host.ctl_pane39.append(
