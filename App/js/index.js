@@ -2137,7 +2137,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("5.104761904761904em")
                 .setHeight("2.742857142857143em")
-                .setCaption("Button"),
+                .setCaption("gun"),
                 "after"
             );
             
@@ -2148,7 +2148,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.7333333333333334em")
                 .setWidth("5.104761904761904em")
                 .setHeight("2.895238095238095em")
-                .setCaption("Button"),
+                .setCaption("rocket luncher"),
                 "after"
             );
             
@@ -2159,7 +2159,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("7.542857142857143em")
                 .setWidth("5.104761904761904em")
                 .setHeight("2.895238095238095em")
-                .setCaption("Button"),
+                .setCaption("kill yourself"),
                 "after"
             );
             
@@ -2170,7 +2170,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("11.352380952380953em")
                 .setWidth("5.104761904761904em")
                 .setHeight("2.742857142857143em")
-                .setCaption("Button"),
+                .setCaption("btools"),
                 "after"
             );
             
