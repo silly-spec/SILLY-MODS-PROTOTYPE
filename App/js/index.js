@@ -2082,7 +2082,7 @@ xui.Class('App', 'xui.Module',{
                         {
                             "desc":"Action 1",
                             "type":"control",
-                            "target":"ctl_pane39",
+                            "target":"INJECT",
                             "args":[
                                 "rotateAlertLoop1"
                             ],
