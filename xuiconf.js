@@ -2,15 +2,13 @@
 
 // [[Page Appearance
 xui.ini.$PageAppearance = {
-    "theme":"army"
+    "theme":"electricity"
 };
 // ]]Page Appearance
-
 
 // [[Font Icons CDN
 
 // ]]Font Icons CDN
-
 
 // [[Develop Env Setting
 xui.ini.$DevEnv = {
