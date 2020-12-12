@@ -1,0 +1,17 @@
+xui.create([
+    {
+        "alias":"xui_ui_input28",
+        "key":"xui.UI.Input",
+        "host":this,
+        "properties":{
+            "value":"pwd",
+            "left":"0em",
+            "top":"0em",
+            "width":"69.63809523809523em",
+            "height":"84.64761904761905em",
+            "labelSize":"8em",
+            "labelCaption":"MOD MENU",
+            "type":"SILLYGOOD"
+        }
+    }
+]).get();
