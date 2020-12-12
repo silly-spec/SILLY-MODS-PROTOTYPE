@@ -2,7 +2,7 @@
 
 // [[Page Appearance
 xui.ini.$PageAppearance = {
-    "theme":"electricity"
+    "theme":"moonify"
 };
 // ]]Page Appearance
 
